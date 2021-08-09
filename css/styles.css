@@ -323,6 +323,28 @@ img {
   margin-right: 0;
 }
 
+.activity-thumb{
+  position: relative;
+}
+
+.activity-desc{
+position: absolute;
+bottom: 0;
+padding-top: 27px;
+padding-bottom: 27px;
+
+width: 100%;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+
+background-color: rgba(47, 48, 58, 0.8);
+color: var(--white-text-color);
+
+
+}
+
 /* Team */
 .section-team {
   background-color: var(--hero-text-color);
