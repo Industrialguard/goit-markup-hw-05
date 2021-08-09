@@ -59,9 +59,6 @@ img {
 
 /* Site header */
 .page-header {
-  /*padding-top: 24px;
-  padding-bottom: 25px;*/
-
   border-bottom: 1px solid #ececec;
 }
 
@@ -111,8 +108,9 @@ img {
 .navigation-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
 
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: var(--title-text-color);
   font-weight: 500;
@@ -128,6 +126,17 @@ img {
 
 .navigation-link.current {
   color: var(--accent-color);
+}
+
+.current::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  bottom: -1px;
 }
 
 .header-contacts {
